@@ -1,0 +1,350 @@
+/*========== SECTION ATRIBUTOSJOGO START ========== */
+
+.atributosJogo {
+    width: 100%;
+    height: auto;
+    background-color: #2d2d2d;
+}
+
+.atributosJogoContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.atributosJogoContainer h2 {
+    display: flex;
+    justify-content: flex-start;
+    font-size: clamp(1rem, 2.5vw, 3rem);
+    font-weight: 800;
+    padding: 5vw 0;
+    color: #fff;
+}
+
+.atributosJogoCards {
+    width: 100%;
+    height: 25vw;
+    display: flex;
+    margin-bottom: 3vw;
+}
+
+.cardBoxLeft {
+    height: 100%;
+    width: 50%;
+}
+
+.cardBoxRight {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card01 {
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/star-wars-battlefront-review-image1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cardContent01 {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    padding: 1vw;
+    background-color: #892be28a;
+    transition: 0.7s;
+    transform: scale(0);
+}
+
+.card01:hover .cardContent01 {
+    transform: scale(1.1);
+}
+
+.cardContent01Img {
+    height: 100%;
+    width: 100%;
+}
+
+.cardContent01Txt {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100% - 2em);
+    padding: 2vh;
+}
+
+.card02,
+.card03,
+.card04,
+.card05 {
+    height: 50%;
+    width: 50%;
+}
+
+.card02 {
+    background-image: url(../img/star-wars-battlefront-review-image2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cardContent02 {
+    background-color: #ff000067;
+}
+
+.card03 {
+    background-image: url(../img/star-wars-battlefront-review-image3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cardContent03 {
+    background-color: #00ff008a;
+}
+
+.card04 {
+    background-image: url(../img/star-wars-battlefront-review-image4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cardContent04 {
+    background-color: #ffff008c;
+}
+
+.card05 {
+    background-image: url(../img/star-wars-battlefront-review-image5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cardContent05 {
+    background-color: #0000ff75;
+}
+
+.cardContent02,
+.cardContent03,
+.cardContent04,
+.cardContent05 {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    padding: 1em;
+    transition: 0.7s;
+    transform: scale(0);
+}
+
+.cardContent02Img,
+.cardContent03Img,
+.cardContent04Img,
+.cardContent05Img {
+    height: 100%;
+    width: 100%;
+}
+
+.cardContent02Txt,
+.cardContent03Txt,
+.cardContent04Txt,
+.cardContent05Txt {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1vh;
+    height: calc(100% - 2em);
+}
+
+.card02:hover .cardContent02 {
+    transform: scale(1.1);
+}
+.card03:hover .cardContent03 {
+    transform: scale(1.1);
+}
+.card04:hover .cardContent04 {
+    transform: scale(1.1);
+}
+.card05:hover .cardContent05 {
+    transform: scale(1.1);
+}
+
+.card01:hover .cardContent01 button {
+    cursor: pointer;
+}
+.card02:hover .cardContent02 button {
+    cursor: pointer;
+}
+.card03:hover .cardContent03 button {
+    cursor: pointer;
+}
+.card04:hover .cardContent04 button {
+    cursor: pointer;
+}
+.card05:hover .cardContent05 button {
+    cursor: pointer;
+}
+
+.card01,
+.card02,
+.card03,
+.card04,
+.card05 {
+    color: #fff;
+}
+
+.card01 h3 {
+    font-size: clamp(1.3rem, 2.5vw, 3rem);
+    font-weight: 800;
+    line-height: 100%;
+}
+
+.card01 p {
+    font-size: clamp(1rem, 1.5vw, 2rem);
+    font-size: 400;
+    line-height: 100%;
+}
+
+.card02 h3,
+.card03 h3,
+.card04 h3,
+.card05 h3 {
+    font-size: clamp(1.3rem, 0.3vw, 1.7rem);
+    font-weight: 800;
+    line-height: 100%;
+}
+
+.card02 p,
+.card03 p,
+.card04 p,
+.card05 p {
+    font-size: clamp(0.7rem, 0.7vw, 1.5rem);
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.card01 button {
+    border: solid 2px #fff;
+    background-color: transparent;
+    width: 30%;
+    font-size: clamp(1rem, 0.7vw, 1.5rem);
+    color: #fff;
+    padding: 0.7em 0;
+    transition: ease-in-out 0.3s;
+}
+
+.card02 button,
+.card03 button,
+.card04 button,
+.card05 button {
+    border: solid 2px #fff;
+    background-color: transparent;
+    width: 50%;
+    font-size: clamp(1rem, 0.7vw, 1.5rem);
+    color: #fff;
+    padding: 0.4em 0;
+    transition: ease-in-out 0.3s;
+}
+
+.card01 button:hover,
+.card02 button:hover,
+.card03 button:hover,
+.card04 button:hover,
+.card05 button:hover {
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.521);
+}
+
+.atributosJogoImage {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.atributosJogoImage img {
+    width: 100%;
+    height: auto;
+}
+
+.atributosJogoImage p {
+    display: flex;
+    text-align: right;
+    color: #fff;
+    max-width: 50%;
+    font-weight: 300;
+    font-size: clamp(0.6rem, 1vw, 2rem);
+    margin-top: 1vw;
+}
+
+.atributosJogoImage h2 {
+    width: 100%;
+    padding: 10vw 0;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+}
+/*========== SECTION ATRIBUTOSJOGO END ========== */
+
+/*========== SECTION ATRIBUTOSJOGO RESPONSIVE =========*/
+
+@media screen and (max-width: 1000px) {
+    .atributosJogoCards {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .atributosJogoContainer h2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .cardBoxLeft {
+        height: auto;
+        width: 100%;
+    }
+
+    .cardBoxRight {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .card02,
+    .card03,
+    .card04,
+    .card05 {
+        height: auto;
+        width: 100%;
+    }
+
+    .card02 h3,
+    .card03 h3,
+    .card04 h3,
+    .card05 h3 {
+        font-size: clamp(1.3rem, 2.5vw, 3rem);
+        font-weight: 800;
+        line-height: 100%;
+    }
+
+    .card02 p,
+    .card03 p,
+    .card04 p,
+    .card05 p {
+        font-size: clamp(1rem, 1.5vw, 2rem);
+    }
+
+    .atributosJogoImage p {
+        max-width: 100%;
+    }
+
+    .card01 button {
+        width: 50%;
+        font-size: clamp(1rem, 0.7vw, 1.5rem);
+        padding: 0.4em 0;
+    }
+}

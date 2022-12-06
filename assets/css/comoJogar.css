@@ -1,0 +1,149 @@
+/*========== SECTION COMOJOGAR START ========== */
+.comoJogar {
+    position: relative;
+    width: 100%;
+    padding: 10vh 0;
+    background-color: #fff;
+}
+
+.comoJogarContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.comoJogarImg {
+    position: absolute;
+    top: -20vw;
+    left: 0;
+    width: 30%;
+}
+
+.comoJogarImg img {
+    width: 100%;
+}
+
+.comoJogarCards {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.comoJogarCard {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+    align-items: center;
+    justify-content: end;
+    width: 25vw;
+}
+
+.comoJogarCardTitle {
+    font-size: clamp(1.7rem, 3vw, 3.7rem);
+    font-weight: 400;
+    transition: ease-in-out 0.3s;
+}
+
+.comoJogarCardBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+    text-align: center;
+    position: relative;
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+    border: solid 3px #000;
+    background-color: #000;
+}
+
+.comoJogarCardBtn span {
+    font-size: clamp(0.9rem, 1.5vw, 2.5rem);
+    margin: 0.5rem 0;
+    z-index: 2;
+}
+
+.comoJogarCardBtn:hover {
+    color: #fff;
+}
+
+.comoJogarCardBtn::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ff0000;
+    transition: ease-in-out 0.5s;
+}
+
+.comoJogarCardBtn:hover:after {
+    width: 100%;
+}
+
+.comoJogarCard:hover .comoJogarCardTitle {
+    transform: scale(1.1);
+    font-weight: 600;
+}
+
+.comoJogarCard:hover hr {
+    background-color: #ff0000;
+}
+
+.comoJogarCard p {
+    font-size: clamp(0.9rem, 1.1vw, 2rem);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 100%;
+}
+
+.comoJogarCard hr {
+    width: 50%;
+    border: none;
+    height: 0.5vh;
+    background-color: black;
+    transition: ease-in-out 0.5s;
+}
+/*========== SECTION COMOJOGAR END ========== */
+
+/*========== SECTION COMOJOGAR RESPONSIVE =========*/
+@media screen and (max-width: 1000px) {
+    .comoJogar {
+        padding: 5vh 0;
+        width: 100%;
+    }
+
+    .comoJogarContainer {
+        height: auto;
+        margin-right: 0;
+    }
+
+    .comoJogarCards {
+        flex-direction: column;
+        height: 100%;
+        width: 60vw;
+    }
+
+    .comoJogarCard {
+        justify-content: space-evenly;
+        width: 40vw;
+        height: 40vw;
+    }
+
+    .comoJogarImg {
+        left: -40vw;
+        width: 100%;
+    }
+    .comoJogarImg img {
+        width: 100%;
+    }
+
+    .comoJogarCard {
+        width: 100%;
+    }
+}

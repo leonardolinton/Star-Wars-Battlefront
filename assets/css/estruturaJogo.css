@@ -1,0 +1,117 @@
+/*========== SECTION ESTRUTURAJOGO START ========== */
+
+.estruturaJogo {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(7vw);
+    padding-bottom: 2vw;
+}
+
+.estruturaJogoImgAvatar01 {
+    width: 50%;
+}
+
+.estruturaJogoImgAvatar01 img {
+    width: 100%;
+}
+
+.estruturaJogoImgAvatar02 {
+    display: flex;
+    align-items: flex-end;
+    width: 25%;
+}
+
+.estruturaJogoImgAvatar02 img {
+    width: 100%;
+}
+
+.estruturaJogoMenu {
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    text-align: right;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.estruturaJogoMenu h2 {
+    margin-bottom: 1vw;
+    text-align: right;
+    font-size: clamp(1.2rem, 5vw, 5rem);
+    font-weight: 800;
+    line-height: 100%;
+    z-index: 1;
+}
+
+.estruturaJogoMenu ul {
+    margin-top: 1rem;
+    width: 35vw;
+    padding: 5px;
+}
+
+.estruturaJogoMenu ul li {
+    width: 100%;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.estruturaJogoMenu ul li a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: clamp(0.5rem, 2.5vw, 2.3rem);
+    padding: 1px 5px;
+    color: #000;
+    transition: ease-in-out 0.3s;
+}
+
+.estruturaJogoMenu ul li a:hover {
+    color: #fff;
+    background-color: #ff0000;
+}
+
+/*========== SECTION ESTRUTURAJOGO END ========== */
+
+/*========== SECTION ESTRUTURAJOGO RESPONSIVE ==========*/
+
+/*========== RESPONSIVE 1000PX ==========*/
+
+@media screen and (max-width: 1000px) {
+    .estruturaJogoMenu {
+        height: 100%;
+        max-width: 30vw;
+    }
+
+    .estruturaJogoMenu ul {
+        width: 45vw;
+    }
+}
+
+/*========== RESPONSIVE 800PX ==========*/
+
+@media screen and (max-width: 800px) {
+    .estruturaJogoMenu {
+        height: 100%;
+        max-width: 50vw;
+    }
+
+    .estruturaJogoMenu ul {
+        background-color: #ffffff6e;
+    }
+
+    .estruturaJogoMenu ul {
+        margin-top: 0;
+        width: 45vw;
+    }
+}

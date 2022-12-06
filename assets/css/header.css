@@ -1,0 +1,120 @@
+/*========== HEADER START ========== */
+.header {
+    position: relative;
+    height: 45vw;
+    width: 100%;
+    background-image: url(../img/bg-header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.headerContainer {
+    height: 45vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.headerLogo {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15vw;
+}
+
+.headerLogo img {
+    width: 35vw;
+}
+
+.headerBanner {
+    position: absolute;
+    top: 1vw;
+    left: 6vw;
+    width: 70vw;
+}
+
+.headerBanner img {
+    width: 100%;
+}
+
+.headerBox {
+    position: absolute;
+    z-index: 3;
+    right: 5vw;
+}
+
+.headerBox h1 {
+    font-size: clamp(0.7rem, 2.5vw, 2.7rem);
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.headerBox h1 span {
+    font-weight: 800;
+}
+
+.headerBox hr {
+    margin: 0.5vw 0;
+    height: 3px;
+    border: none;
+    background-color: #000;
+    color: #000;
+}
+
+.headerBoxContent {
+    display: flex;
+    gap: 1vw;
+}
+
+.headerBoxContent p {
+    font-size: clamp(0.7rem, 2.5vw, 2.7rem);
+    font-weight: 700;
+}
+
+.headerBoxContent span {
+    font-weight: 400;
+    font-size: clamp(0.7rem, 2vw, 2rem);
+}
+
+.headerBoxContentBtns {
+    display: flex;
+    gap: 0.5vw;
+    align-items: center;
+}
+
+.headerBoxContentBtns button {
+    width: 1rem;
+    height: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 0;
+    margin: 1px;
+    padding: 1px;
+    background-color: #9fb6ca;
+    cursor: pointer;
+}
+
+.headerBoxContentBtns button span {
+    font-size: 0.9rem;
+    font-weight: 800;
+    color: #000;
+}
+
+/*========== HEADER END ========== */
+
+/*========== HEADER RESPONSIVE ========== */
+@media screen and (max-width: 1000px) {
+    .headerBox {
+        bottom: -8vw;
+    }
+
+    .headerBoxContentBtns button {
+        margin: 1px;
+        width: 0.7rem;
+        height: 0.7rem;
+    }
+}

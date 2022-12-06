@@ -1,0 +1,259 @@
+/*========== SECTION SOBREJOGO START ========== */
+
+.SobreJogo {
+    width: 100%;
+    min-height: calc(100vh - 5vh);
+    background-image: url(../img/bg-sobre.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 100vh 100%;
+}
+
+.sobreJogoComecar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    transform: translateY(-5vw);
+}
+
+.SobreJogoBox {
+    width: 22.5vw;
+    padding: 7rem 1.5rem;
+    background-image: url(../img/bg-comeceAJogar.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    gap: 2.3rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.SobreJogoBox h2 {
+    font-size: clamp(1.6rem, 3vw, 3.7rem);
+    line-height: 100%;
+    text-align: center;
+}
+
+.SobreJogoBox p {
+    font-size: clamp(0.8rem, 1.1vw, 2rem);
+    line-height: 100%;
+    text-align: left;
+}
+
+.SobreJogoBoxDateUpdate {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    font-size: 10px;
+    font-weight: 600;
+    text-align: right;
+}
+
+.SobreJogoBoxBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+    text-align: center;
+    position: relative;
+    transition: ease-in-out 0.3s;
+    border-radius: 5px;
+}
+
+.SobreJogoBoxBtn:hover {
+    color: #fff;
+}
+
+.SobreJogoBoxBtn:hover span {
+    transform: scale(1.5);
+}
+
+.SobreJogoBoxBtn::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #000;
+    border-radius: 5px;
+    transition: ease-in-out 0.3s;
+}
+
+.SobreJogoBoxBtn:hover:after {
+    width: 100%;
+}
+
+.SobreJogoBoxBtn span {
+    transition: ease-in-out 0.3s;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    margin: 0.5rem 0;
+    z-index: 2;
+}
+
+.SobreJogoContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.SobreJogoConteudo {
+    width: 50vw;
+    display: flex;
+    align-items: flex-end;
+    max-width: 950px;
+}
+
+.SobreJogoConteudoTxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+    width: 50%;
+    padding: 5px;
+    background-color: #ffffff6e;
+}
+
+.SobreJogoConteudoTxt h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: clamp(1rem, 2.5vw, 2.3rem);
+}
+
+.SobreJogoConteudoTxt h3::after {
+    content: "";
+    display: block;
+    width: 60%;
+    height: 3px;
+    background: var(--FontColorOne);
+    text-align: right;
+}
+
+.SobreJogoConteudoTxt p {
+    margin-top: 1vw;
+    line-height: 130%;
+    text-align: right;
+    font-size: clamp(0.9rem, 1.1vw, 2rem);
+    font-weight: 500;
+    color: var(--FontColorOne);
+}
+
+.SobreJogoConteudoImg {
+    width: 50%;
+    height: 100%;
+    margin-left: 1vw;
+    overflow: hidden;
+}
+
+.SobreJogoConteudoImg img {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+.SobreJogoConteudoImg img:hover {
+    transform: scale(1.3);
+}
+
+.SobreJogoContainer hr {
+    height: 5px;
+    border: none;
+    width: 100%;
+    background-color: #2d2d2d;
+}
+
+/*========== SECTION SOBREJOGO END ========== */
+
+/*========== SECTION SOBREJOGO RESPONSIVE ========== */
+
+/*========== RESPONSIVE 1000px =========*/
+@media screen and (max-width: 1000px) {
+    .sobreJogoComecar {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-end;
+        padding-top: 15vw;
+    }
+
+    .SobreJogoBox {
+        width: 50vw;
+        height: 50vh;
+    }
+
+    .SobreJogoConteudo {
+        width: 50vw;
+        flex-direction: column-reverse;
+    }
+
+    .SobreJogoConteudo {
+        width: 100%;
+    }
+
+    .SobreJogoConteudoTxt {
+        width: 50vw;
+    }
+
+    .SobreJogoConteudoImg {
+        width: 50vw;
+        height: 20vw;
+    }
+
+    .SobreJogoBox {
+        padding: 2.5rem 1rem;
+        gap: 1.5rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+/*========== RESPONSIVE 500px =========*/
+@media screen and (max-width: 500px) {
+    .sobreJogoComecar {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-end;
+        padding-top: 15vw;
+    }
+
+    .SobreJogoBox {
+        width: 70vw;
+    }
+
+    .SobreJogoConteudo {
+        width: 70vw;
+        flex-direction: column-reverse;
+    }
+
+    .SobreJogoConteudo {
+        width: 100%;
+    }
+
+    .SobreJogoConteudoTxt {
+        width: 70vw;
+    }
+
+    .SobreJogoConteudoImg {
+        width: 70vw;
+        height: 40vw;
+    }
+
+    .SobreJogoBox {
+        padding: 2.5rem 1rem;
+        gap: 1.5rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
