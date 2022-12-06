@@ -1,9 +1,8 @@
-<h1 align="center"><a href="https://leonardolinton.github.io/fitgym/">Star Wars - Vai na Web</a></h1>
+<h1 align="center"><a href="https://leonardolinton.github.io/Star-Wars-Battlefront/">Star Wars - Vai na Web</a></h1>
 
-![preview!](https://user-images.githubusercontent.com/109364804/204933292-4019cf16-d301-4169-abfc-7d3561944d86.png)
+![preview!](https://user-images.githubusercontent.com/109364804/206045251-74fffe62-ecd2-42d3-bdd1-0f6873b484b8.png)
 
-
-<h2>OBS: Layout Produzido por Vai na Web, para fins educacionais</h2>
+<h2>OBS: Layout Produzido por Vai na Web, para fins exclusivamente educacionais</h2>
 
 <h2>Seções</h2>
 
